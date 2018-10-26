@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Work Time Traker</title>
+<script type="text/javascript">
+	function anotarEntrada() {
+		document.getElementById('LEntrada').value = '8:30';
+	}
+	function anotarSalida() {
+		document.getElementById('LSalida').value = '18:30';
+		document.getElementById('totalHoras').value = '10';
+	}
+</script>
+</head>
+<body>
+
+	<form>
+		<table border="">
+			<tr>
+				<td></td>
+				<td>Entrada</td>
+				<td>Salida</td>
+			</tr>
+			<tr>
+				<td>L</td>
+				<td><input type="text" id="LEntrada"></td>
+				<td><input type="text" id="LSalida"></td>
+			</tr>
+			<tr>
+				<td>M</td>
+				<td><input type="text" id="MEntrada"></td>
+				<td><input type="text" id="MSalida"></td>
+			</tr>
+			<tr>
+				<td>X</td>
+				<td><input type="text" id="XEntrada"></td>
+				<td><input type="text" id="XSalida"></td>
+			</tr>
+			<tr>
+				<td>J</td>
+				<td><input type="text" id="JEntrada"></td>
+				<td><input type="text" id="JSalida"></td>
+			</tr>
+			<tr>
+				<td>V</td>
+				<td><input type="text" id="VEntrada"></td>
+				<td><input type="text" id="VSalida"></td>
+			</tr>
+		</table>
+		Horas de esta semana: <input type="text" id="totalHoras" value="0">
+		<br /> <input type="button" value="Anotar entrada"
+			onClick="anotarEntrada();"><input type="button"
+			value="Anotar salida" onClick="anotarSalida();">
+	</form>
+</body>
+</html>
